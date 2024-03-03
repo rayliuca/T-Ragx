@@ -9,22 +9,20 @@ torchaudio
 #For elastic search
 elasticsearch>=7.9.1
 
+transformers>=4.38.1
+llama-cpp-python~=0.2.54
+openai~=1.13.3
+unbabel-comet>=2.2.1
+
 bitsandbytes>=0.41.3.post2
-fasttext-wheel==0.9.2
+fasttext-wheel>=0.9.2
+datasets>=2.13.1
 
-datasets==2.13.1
 fsspec==2023.9.2
-
 jinja2~=3.1.2
 tqdm~=4.65.0
 levenshtein~=0.23.0
 setuptools
-
-llama-cpp-python~=0.2.54
-openai~=1.13.3
-fugashi[unidic_lite]
-unbabel-comet>=2.2.1
-transformers~=4.38.1
 
 scipy
 evaluate
@@ -33,6 +31,7 @@ accelerate
 pandas
 protobuf
 OpenCC
+fugashi[unidic_lite]
 sacrebleu[ja]
 black
 flake8
