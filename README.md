@@ -144,25 +144,6 @@ t_ragx_translator.batch_translate(
 )
 ```
 
-## Data Sources
-
-|                           Dataset                           | Translation Memory |  Glossary  | Training | Testing |                                            License                                             |
-|:-----------------------------------------------------------:|:------------------:|:----------:|:--------:|:-------:|:----------------------------------------------------------------------------------------------:|
-|                         OpenMantra                          |         ✅          |            |    ✅     |         | [CC BY-NC 4.0](https://github.com/mantra-inc/open-mantra-dataset?tab=License-1-ov-file#readme) |
-|                         WMT < 2023                          |         ✅          |            |    ✅     |         |           [for research](https://www2.statmt.org/wmt23/translation-task.html#_data)            |
-|                           ParaMed                           |         ✅          |            |    ✅     |         |                  [cc-by-4.0](https://huggingface.co/datasets/bigbio/paramed)                   |
-|                       ted_talks_iwslt                       |         ✅          |            |    ✅     |         |                   [cc-by-nc-nd-4.0](https://nlp.stanford.edu/projects/jesc/)                   |
-|                            JESC                             |         ✅          |            |    ✅     |         |                    [CC BY-SA 4.0](https://nlp.stanford.edu/projects/jesc/)                     |
-|                            MTNT                             |         ✅          |            |          |         |           [Custom/ Reddit API](https://pmichel31415.github.io/mtnt/index.html#licen)           |
-|                           WCC-JC                            |         ✅          |            |    ✅     |         |   [for research](https://github.com/zhang-jinyi/Web-Crawled-Corpus-for-Japanese-Chinese-NMT)   |
-|                            ASPEC                            |                    |            |    ✅     |         |              [custom, for research](https://jipsti.jst.go.jp/aspec/terms_en.html)              |
-|               All other ja-en/zh-en OPUS data               |         ✅          |            |          |         |                       mix of open licenses: check https://opus.nlpl.eu/                        |
-|                          Wikidata                           |                    |     ✅      |          |         |                    [CC0](https://www.wikidata.org/wiki/Wikidata:Copyright)                     |
-|             Tensei Shitara Slime Datta Ken Wiki             |                    | ☑️ in task |          |         |                          [CC BY-SA](https://www.fandom.com/licensing)                          |
-|                          WMT 2023                           |                    |            |          |    ✅    |           [for research](https://www2.statmt.org/wmt23/translation-task.html#_data)            |
-| Tensei Shitara Slime Datta Ken Web Novel & web translations |     ☑️ in task     |            |          |    ✅    |                                Not included translation memory                                 |
-
-
 ## Models
 
 Note: you could use *any* LLMs by using the API models (i.e. `OllamaModel` or `OpenAIModel`) or extending the `t_ragx.models.BaseModel` class
@@ -170,7 +151,7 @@ Note: you could use *any* LLMs by using the API models (i.e. `OllamaModel` or `O
 The following models were finetuned using the T-Ragx prompts, so they might work a bit better than some of the off-the-shelve models with T-Ragx
 
 ### QLoRA Models:
-| Source Model                                                                                    | Model Type  | Quantization                            | Model                                                                                                               |
+| Source Model                                                                                    | Model Type  | Quantization                            | Fine-tuned Model                                                                                                    |
 |-------------------------------------------------------------------------------------------------|-------------|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | [mistralai/Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) | LoRA        |                                         | [rayliuca/TRagx-Mistral-7B-Instruct-v0.2](https://huggingface.co/rayliuca/TRagx-Mistral-7B-Instruct-v0.2)           |
 |                                                                                                 | merged AWQ  | AWQ                                     | [rayliuca/TRagx-AWQ-Mistral-7B-Instruct-v0.2](https://huggingface.co/rayliuca/TRagx-AWQ-Mistral-7B-Instruct-v0.2)   |
@@ -181,5 +162,29 @@ The following models were finetuned using the T-Ragx prompts, so they might work
 | [internlm/internlm2-7b](https://huggingface.co/internlm/internlm2-7b)                           | LoRA        |                                         | [rayliuca/TRagx-internlm2-7b](https://huggingface.co/rayliuca/TRagx-internlm2-7b)                                   |
 |                                                                                                 | merged GPTQ | GPTQ                                    | [rayliuca/TRagx-GPTQ-internlm2-7b](https://huggingface.co/rayliuca/TRagx-GPTQ-internlm2-7b)                         |
 | [Unbabel/TowerInstruct-7B-v0.2](https://huggingface.co/Unbabel/TowerInstruct-7B-v0.2)           | LoRA        |                                         | [rayliuca/TRagx-TowerInstruct-7B-v0.2](https://huggingface.co/rayliuca/TRagx-TowerInstruct-7B-v0.2)                 |
+
+
+
+## Data Sources
+All of the datasets used in the project
+
+
+|                                                                 Dataset                                                                  | Translation Memory |  Glossary  | Training | Testing |                                            License                                             |
+|:----------------------------------------------------------------------------------------------------------------------------------------:|:------------------:|:----------:|:--------:|:-------:|:----------------------------------------------------------------------------------------------:|
+|                                     [OpenMantra](https://github.com/mantra-inc/open-mantra-dataset)                                      |         ✅          |            |    ✅     |         | [CC BY-NC 4.0](https://github.com/mantra-inc/open-mantra-dataset?tab=License-1-ov-file#readme) |
+|                                              [WMT](https://machinetranslate.org/wmt) < 2023                                              |         ✅          |            |    ✅     |         |           [for research](https://www2.statmt.org/wmt23/translation-task.html#_data)            |
+|                                        [ParaMed](https://huggingface.co/datasets/bigbio/paramed)                                         |         ✅          |            |    ✅     |         |                  [cc-by-4.0](https://huggingface.co/datasets/bigbio/paramed)                   |
+|                                    [ted_talks_iwslt](https://huggingface.co/datasets/ted_talks_iwslt)                                    |         ✅          |            |    ✅     |         |                   [cc-by-nc-nd-4.0](https://nlp.stanford.edu/projects/jesc/)                   |
+|                                             [JESC](https://nlp.stanford.edu/projects/jesc/)                                              |         ✅          |            |    ✅     |         |                    [CC BY-SA 4.0](https://nlp.stanford.edu/projects/jesc/)                     |
+|                                          [MTNT](https://pmichel31415.github.io/mtnt/index.html)                                          |         ✅          |            |          |         |           [Custom/ Reddit API](https://pmichel31415.github.io/mtnt/index.html#licen)           |
+|                           [WCC-JC](https://github.com/zhang-jinyi/Web-Crawled-Corpus-for-Japanese-Chinese-NMT)                           |         ✅          |            |    ✅     |         |   [for research](https://github.com/zhang-jinyi/Web-Crawled-Corpus-for-Japanese-Chinese-NMT)   |
+|                                                                  [ASPEC](https://jipsti.jst.go.jp/aspec/)                                                                   |                    |            |    ✅     |         |              [custom, for research](https://jipsti.jst.go.jp/aspec/terms_en.html)              |
+|                                                     All other ja-en/zh-en [OPUS](https://opus.nlpl.eu/) data                                                      |         ✅          |            |          |         |                       mix of open licenses: check https://opus.nlpl.eu/                        |
+|                                                                 [Wikidata](https://www.wikidata.org/)                                                                 |                    |     ✅      |          |         |                    [CC0](https://www.wikidata.org/wiki/Wikidata:Copyright)                     |
+|                                                   [Tensei Shitara Slime Datta Ken Wiki](https://tensura.fandom.com/)                                                    |                    | ☑️ in task |          |         |                          [CC BY-SA](https://www.fandom.com/licensing)                          |
+|                                                                 [WMT 2023](https://www2.statmt.org/wmt23/)                                                                 |                    |            |          |    ✅    |           [for research](https://www2.statmt.org/wmt23/translation-task.html#_data)            |
+|                                       Tensei Shitara Slime Datta Ken Web Novel & web translations                                        |     ☑️ in task     |            |          |    ✅    |                                Not included translation memory                                 |
+
+
 
 
