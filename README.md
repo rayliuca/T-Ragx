@@ -63,11 +63,14 @@ or if you are feeling lucky:
 `pip install git+https://github.com/rayliuca/T-Ragx.git`
 
 #### Environment
-##### Conda / Mamba (Recommended)
+##### (Recommended) Conda / Mamba
 Download the conda [`environment.yml` file](environment.yml) and run:
 
 ```bash
-mamba env create -f environment.yml
+conda env create -f environment.yml
+
+## or with mamba
+# mamba env create -f environment.yml
 ```
 
 Which will crate a `t_ragx` environment that's compatible with this project
