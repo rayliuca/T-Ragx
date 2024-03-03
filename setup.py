@@ -12,7 +12,7 @@ setup(
     author='Ray Liu',
     email='ray@rayliu.ca',
     license='MIT',
-    project_urls={  # Optional
+    project_urls={
         "Bug Reports": "https://github.com/rayliuca/T-Ragx/issues",
         "Source": "https://github.com/rayliuca/T-Ragx",
     },
