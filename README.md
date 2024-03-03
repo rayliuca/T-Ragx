@@ -3,7 +3,7 @@
 
 <p align="center">
   <picture>
-    <img alt="T-Ragx Featured Image" src="https://l8u0.c18.e2-1.dev/t-ragx-public/assets/featured_repo.png" height="300" style="max-width: 100%;">
+    <img alt="T-Ragx Featured Image" src="assets/featured_repo.png" height="300" style="max-width: 100%;">
   </picture>
   <br/>
   <br/>
@@ -180,6 +180,6 @@ The following models were finetuned using the T-Ragx prompts, so they might work
 |                                                                                                 | merged GGUF | Q3_K, Q4_K_M, Q5_K_M, Q5_K_S, Q6_K, F32 | [rayliuca/TRagx-GGUF-NeuralOmniBeagle-7B](https://huggingface.co/rayliuca/TRagx-GGUF-NeuralOmniBeagle-7B)           |
 | [internlm/internlm2-7b](https://huggingface.co/internlm/internlm2-7b)                           | LoRA        |                                         | [rayliuca/TRagx-internlm2-7b](https://huggingface.co/rayliuca/TRagx-internlm2-7b)                                   |
 |                                                                                                 | merged GPTQ | GPTQ                                    | [rayliuca/TRagx-GPTQ-internlm2-7b](https://huggingface.co/rayliuca/TRagx-GPTQ-internlm2-7b)                         |
-| [Unbabel/TowerInstruct-7B-v0.2](https://huggingface.co/Unbabel/TowerInstruct-7B-v0.2)           | LoRA        |                                         | [rayliuca/TRagx-TowerInstruct-7B-v0.2](https://huggingface.co/rayliuca/TRagx-TowerInstruct-7B-v0.2)                                                                                                                    |
+| [Unbabel/TowerInstruct-7B-v0.2](https://huggingface.co/Unbabel/TowerInstruct-7B-v0.2)           | LoRA        |                                         | [rayliuca/TRagx-TowerInstruct-7B-v0.2](https://huggingface.co/rayliuca/TRagx-TowerInstruct-7B-v0.2)                 |
 
 
