@@ -3,7 +3,7 @@
 
 <p align="center">
   <picture>
-    <img alt="T-Ragx Featured Image" src="https://raw.githubusercontent.com/rayliuca/T-Ragx/main/assets/featured_repo.png" height="300" style="max-width: 100%;">
+    <img alt="T-Ragx Featured Image" src="https://github.com/rayliuca/T-Ragx/raw/main/assets/featured_repo.png" height="300" style="max-width: 100%;">
   </picture>
   <br/>
   <br/>
@@ -40,7 +40,7 @@ T-Ragx Demo: <a target="_blank" href="https://colab.research.google.com/github/r
 
 ### Results
 
-- In-task translation memory and glossary achieved a significant (~45%) increase in aggregated translation scores on the QLoRA Mistral 7b model 
+- QLoRA + in-task translation memory and glossary achieved a significant (~45%) increase in aggregated translation scores on the Mistral 7b Instruct model 
 - Great recall for valid translation memory/ glossary (i.e. previous translations/ character names)
 - Outperforms native TowerInstruct on all 6 language directions finetuned (Ja x Zh x En)
 - Outperforms DeepL in translating Japanese web novel (That Time I Got Reincarnated as a Slime) to Chinese with in-task
