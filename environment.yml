@@ -10,6 +10,7 @@ dependencies:
   - torchaudio
   - pip
   - pip:
+      - t-ragx
       - fasttext-wheel>=0.9.2
       - elasticsearch>=7.9.1
       - levenshtein~=0.23.0
