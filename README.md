@@ -56,9 +56,13 @@ T-Ragx Demo: <a target="_blank" href="https://colab.research.google.com/github/r
 ### Install
 #### Environment
 ##### Conda / Mamba (Recommended)
-```python
+Download the conda [`environment.yml` file](environment.yml) and run:
 
+```bash
+mamba env create -f environment.yml
 ```
+
+Which will crate a `t_ragx` environment that's compatible with this project
 
 ##### pip
 Use your favourite virtual environment, and run:
