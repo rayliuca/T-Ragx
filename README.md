@@ -90,7 +90,7 @@ input_processor = t_ragx.Processors.ElasticInputProcessor()
 
 # Load/ point to the demo resources
 input_processor.load_general_glossary("https://l8u0.c18.e2-1.dev/t-ragx-public/glossary")
-input_processor.load_general_translation(elasticsearch_host="t-ragx-fossil.rayliu.ca", elasticsearch_port=80)
+input_processor.load_general_translation(elasticsearch_host=["https://t-ragx-fossil.rayliu.ca", "https://t-ragx-fossil2.rayliu.ca"])
 ```
 
 Using the `llama-cpp-python` backend:
@@ -149,7 +149,7 @@ t_ragx_translator.batch_translate(
 
 ## Elasticsearch
 
-Note: you can access a read-only preview T-Ragx Elasticsearch service at `http://t-ragx-fossil.rayliu.ca:80`
+Note: you can access read-only preview T-Ragx Elasticsearch services at `https://t-ragx-fossil.rayliu.ca` and `https://t-ragx-fossil2.rayliu.ca`
 (But you will need a personal Elasticsearch service to add your in-task memories)
 
 ### Install using Docker
