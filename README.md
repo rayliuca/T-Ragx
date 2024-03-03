@@ -163,4 +163,23 @@ t_ragx_translator.batch_translate(
 | Tensei Shitara Slime Datta Ken Web Novel & web translations |     ☑️ in task     |            |          |    ✅    |                                Not included translation memory                                 |
 
 
+## Models
+
+Note: you could use *any* LLMs by using the API models (i.e. `OllamaModel` or `OpenAIModel`) or extending the `t_ragx.models.BaseModel` class
+
+The following models were finetuned using the T-Ragx prompts, so they might work a bit better than some of the off-the-shelve models with T-Ragx
+
+### QLoRA Models:
+| Source Model                                                                                    | Model Type  | Quantization                            | Model                                                                                                               |
+|-------------------------------------------------------------------------------------------------|-------------|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| [mistralai/Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) | LoRA        |                                         | [rayliuca/TRagx-Mistral-7B-Instruct-v0.2](https://huggingface.co/rayliuca/TRagx-Mistral-7B-Instruct-v0.2)           |
+|                                                                                                 | merged AWQ  | AWQ                                     | [rayliuca/TRagx-AWQ-Mistral-7B-Instruct-v0.2](https://huggingface.co/rayliuca/TRagx-AWQ-Mistral-7B-Instruct-v0.2)   |
+|                                                                                                 | merged GGUF | Q3_K, Q4_K_M, Q5_K_M, Q5_K_S, Q6_K, F32 | [rayliuca/TRagx-GGUF-Mistral-7B-Instruct-v0.2](https://huggingface.co/rayliuca/TRagx-GGUF-Mistral-7B-Instruct-v0.2) |
+| [mlabonne/NeuralOmniBeagle-7B](https://huggingface.co/mlabonne/NeuralOmniBeagle-7B)             | LoRA        |                                         | [rayliuca/TRagx-NeuralOmniBeagle-7B ](https://huggingface.co/rayliuca/TRagx-NeuralOmniBeagle-7B)                    |
+|                                                                                                 | merged AWQ  | AWQ                                     | [rayliuca/TRagx-AWQ-NeuralOmniBeagle-7B](https://huggingface.co/rayliuca/TRagx-AWQ-NeuralOmniBeagle-7B)             |
+|                                                                                                 | merged GGUF | Q3_K, Q4_K_M, Q5_K_M, Q5_K_S, Q6_K, F32 | [rayliuca/TRagx-GGUF-NeuralOmniBeagle-7B](https://huggingface.co/rayliuca/TRagx-GGUF-NeuralOmniBeagle-7B)           |
+| [internlm/internlm2-7b](https://huggingface.co/internlm/internlm2-7b)                           | LoRA        |                                         | [rayliuca/TRagx-internlm2-7b](https://huggingface.co/rayliuca/TRagx-internlm2-7b)                                   |
+|                                                                                                 | merged GPTQ | GPTQ                                    | [rayliuca/TRagx-GPTQ-internlm2-7b](https://huggingface.co/rayliuca/TRagx-GPTQ-internlm2-7b)                         |
+| [Unbabel/TowerInstruct-7B-v0.2](https://huggingface.co/Unbabel/TowerInstruct-7B-v0.2)           | LoRA        |                                         | [rayliuca/TRagx-TowerInstruct-7B-v0.2](https://huggingface.co/rayliuca/TRagx-TowerInstruct-7B-v0.2)                                                                                                                    |
+
 
