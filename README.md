@@ -14,8 +14,11 @@
     <p>Enhancing Translation with RAG-Powered Large Language Models</p>
 </h3>
 
+<br>
 
-🚧 T-Ragx Demo [colab demo]🚧 
+T-Ragx Demo: <a target="_blank" href="https://colab.research.google.com/github/rayliuca/T-Ragx/blob/main/examples/T_Ragx_Demo.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 🚧 T-Ragx Colab Tool [colab tool]🚧
 
