@@ -62,6 +62,17 @@ or if you are feeling lucky:
 
 `pip install git+https://github.com/rayliuca/T-Ragx.git`
 
+
+### Elasticsearch
+
+See the [wiki page instructions](https://github.com/rayliuca/T-Ragx/wiki/Getting-Started#install-elasticsearch)
+
+
+Note: you can access read-only preview T-Ragx Elasticsearch services at `https://t-ragx-fossil.rayliu.ca` and `https://t-ragx-fossil2.rayliu.ca`
+(But you will need a personal Elasticsearch service to add your in-task memories)
+
+
+
 #### Environment
 ##### (Recommended) Conda / Mamba
 Download the conda [`environment.yml` file](environment.yml) and run:
@@ -82,6 +93,7 @@ Use your favourite virtual environment, and run:
 
 
 ### Examples
+
 
 Initiate the input processor:
 
@@ -149,69 +161,6 @@ t_ragx_translator.batch_translate(
 |             Tensei Shitara Slime Datta Ken Wiki             |                    | ☑️ in task |          |         |                          [CC BY-SA](https://www.fandom.com/licensing)                          |
 |                          WMT 2023                           |                    |            |          |    ✅    |           [for research](https://www2.statmt.org/wmt23/translation-task.html#_data)            |
 | Tensei Shitara Slime Datta Ken Web Novel & web translations |     ☑️ in task     |            |          |    ✅    |                                Not included translation memory                                 |
-
-## Elasticsearch
-
-Note: you can access read-only preview T-Ragx Elasticsearch services at `https://t-ragx-fossil.rayliu.ca` and `https://t-ragx-fossil2.rayliu.ca`
-(But you will need a personal Elasticsearch service to add your in-task memories)
-
-### Install using Docker
-
-See the [T-Rex-Fossil](https://github.com/rayliuca/T-Ragx-Fossil) repo
-
-### Install Locally
-
-Note: this project was built with Elasticsearch 7
-
-1. Download the Elasticsearch binary
-2. Unzip
-3. Enter into the unzipped folder
-4. Install the plugins
-
-```bash
-bin/elasticsearch-plugin install repository-s3
-bin/elasticsearch-plugin install analysis-icu
-bin/elasticsearch-plugin install analysis-kuromoji
-bin/elasticsearch-plugin install analysis-smartcn
-```
-
-5. Add the S3 keys
-
-   (The snapshot is stored on IDrive e2 which is apparently not compatible with S3 enough for read-only Elastic S3 repo
-   to work)
-
-   This read-only key will help you connect to the snapshot
-
-```bash
-bin/elasticsearch-keystore add s3.client.default.access_key
-CG4KwcrNPefWdJcsBIUp
-
-bin/elasticsearch-keystore add s3.client.default.secret_key
-Cau5uITwZ7Ke9YHKvWE9cXuTy5chdapBLhqVaI3C
-```
-
-6. Add the snapshot
-
-```bash
-curl -X PUT "http://localhost:9200/_snapshot/public_t_ragx_translation_memory" -H "Content-Type: application/json" -d "{\"type\":\"s3\",\"settings\":{\"bucket\":\"t-ragx-public\",\"base_path\":\"elastic\",\"endpoint\":\"o3t0.or.idrivee2-37.com\"}}"
-```
-
-Note: this is the JSON body:
-
-```json
-{
-  "type": "s3",
-  "settings": {
-    "bucket": "t-ragx-public",
-    "base_path": "elastic",
-    "endpoint": "o3t0.or.idrivee2-37.com"
-  }
-}
-```
-
-7. Restore the Snapshot
-
-   If you use any GUI client i.e. elasticvue, you likely could do this via their interface
 
 
 
