@@ -7,7 +7,7 @@ setup(
     version='0.0.5',
     url="https://github.com/rayliuca/T-Ragx",
     description='Enhancing translation with RAG-powered large language models',
-    long_description=open('README.md').read(),
+    long_description=open('README.md', encoding="utf8").read(),
     long_description_content_type='text/markdown',
     author='Ray Liu',
     email='ray@rayliu.ca',
