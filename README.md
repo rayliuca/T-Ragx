@@ -3,7 +3,7 @@
 
 <p align="center">
   <picture>
-    <img alt="T-Ragx Featured Image" src="https://raw.githubusercontent.com/rayliuca/T-Ragx/main/assets/featured_repo.png" height="300" style="max-width: 100%;">
+    <img alt="T-Ragx Featured Image" src="assets/featured_repo.png" height="300" style="max-width: 100%;">
   </picture>
   <br/>
   <br/>
