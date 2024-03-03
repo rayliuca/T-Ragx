@@ -28,7 +28,7 @@ T-Ragx Demo: <a target="_blank" href="https://colab.research.google.com/github/r
 
 - Democratize high-quality machine translations
 - Open-soured system-level translation framework
-- Fluent/ natural translations using LLM
+- Fluent/ natural translations using LLMs
 - Private and secure local translations
 - Zero-shot in-task translations
 
@@ -40,7 +40,7 @@ T-Ragx Demo: <a target="_blank" href="https://colab.research.google.com/github/r
 
 ### Results
 
-- QLoRA + in-task translation memory and glossary achieved a significant (~45%) increase in aggregated translation scores on the Mistral 7b Instruct model 
+- QLoRA + in-task translation memory and glossary achieved a significant (~45%) increase in aggregated WMT23 translation scores on the Mistral 7b Instruct model 
 - Great recall for valid translation memory/ glossary (i.e. previous translations/ character names)
 - Outperforms native TowerInstruct on all 6 language directions finetuned (Ja x Zh x En)
 - Outperforms DeepL in translating Japanese web novel (That Time I Got Reincarnated as a Slime) to Chinese with in-task
