@@ -16,4 +16,12 @@ setup(
         "Bug Reports": "https://github.com/rayliuca/T-Ragx/issues",
         "Source": "https://github.com/rayliuca/T-Ragx",
     },
+
+    install_requires=[
+        'transformers>=4.38',
+        'elasticsearch',
+        'OpenCC',
+        'levenshtein',
+        'unbabel-comet>=2.2.1',
+      ],
 )
