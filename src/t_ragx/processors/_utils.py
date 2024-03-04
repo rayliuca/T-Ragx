@@ -5,6 +5,7 @@ import pathlib
 import tempfile
 import urllib.request
 from hashlib import md5
+import numpy as np
 
 import requests
 
@@ -29,6 +30,26 @@ def en_text_search(text, keyword):
     elif len(keyword) - 1 > len(text) and text[-len(keyword) + 1:] == " " + keyword:
         return True
     return False
+
+
+def merge_glossary_index(df):
+    """
+    merge the glossary records if the index is not unique
+    otherwise df.to_dict("index") will throw error
+    """
+
+    dup_index = df[df.index.duplicated()].index
+    for idx in dup_index:
+        for c in df.columns:
+            new_list = []
+            for arr in df.loc[idx, c]:
+                new_list += arr.tolist()
+            df.loc[idx, c] = [np.array(list(set(new_list)))] * len(df.loc[idx, c])
+
+    if len(dup_index) > 0:
+        df = df[~df.index.duplicated(keep='first')]
+
+    return df
 
 
 # heuristic glossary retrieval

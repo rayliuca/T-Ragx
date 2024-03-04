@@ -9,7 +9,7 @@ from elasticsearch import client as elastic_client
 from jinja2 import Template as JinjaTemplate
 from tqdm.autonotebook import tqdm
 
-from ._utils import get_glossary, file_cacher
+from ._utils import get_glossary, file_cacher, merge_glossary_index
 from .constants import DEFAULT_GLOSSARY_PARQUET_FOLDER
 from ..utils.heuristic import clean_text
 
@@ -135,6 +135,8 @@ class BaseInputProcessor(metaclass=abc.ABCMeta):
         task_glossary_df = pd.read_parquet(file_cacher(glossary_parquet_path))
         clean_index_dict = {k: clean_text(k) for k in task_glossary_df.index}
         task_glossary_df.rename(index=clean_index_dict, inplace=True)
+
+        task_glossary_df = merge_glossary_index(task_glossary_df)
 
         glossary_dict = task_glossary_df.to_dict("index")
 
