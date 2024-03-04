@@ -42,7 +42,7 @@ T-Ragx Demo: <a target="_blank" href="https://colab.research.google.com/github/r
 
 - QLoRA + in-task translation memory and glossary achieved a significant (~45%) increase in aggregated WMT23 translation scores on the Mistral 7b Instruct model 
 - Great recall for valid translation memory/ glossary (i.e. previous translations/ character names)
-- Outperforms native TowerInstruct on all 6 language directions finetuned (Ja x Zh x En)
+- Outperforms native TowerInstruct on 3/4 WMT23 language directions (Ja<->En, Zh->En)
 - Outperforms DeepL in translating Japanese web novel (That Time I Got Reincarnated as a Slime) to Chinese with in-task
   memories
     - Japanese -> Chinese
