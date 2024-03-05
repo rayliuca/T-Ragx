@@ -23,5 +23,14 @@ setup(
         'OpenCC',
         'levenshtein',
         'unbabel-comet>=2.2.1',
-      ],
+    ],
+    keywords=[
+        'machine-translation',
+        'computer-aided-translation',
+        'computer-assisted-translation',
+        'rag',
+        'retrieval-augmented-generation',
+        'large-language-models',
+        'llm',
+    ]
 )
