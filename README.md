@@ -41,7 +41,7 @@ T-Ragx Demo: <a target="_blank" href="https://colab.research.google.com/github/r
 
 - Combining QLoRA with in-task translation memory and glossary resulted in ~45% increase in aggregated WMT23 translation scores, benchmarked against the Mistral 7b Instruct model
 - Demonstrated high recall for valid translation memories and glossaries, including previous translations and character names
-- Surpassed the performance of the native [TowerInstruct](https://huggingface.co/Unbabel/TowerInstruct-7B-v0.2) model in three of the four WMT23 language direction tests (Ja<->En, Zh->En)
+- Surpassed the performance of the native [TowerInstruct](https://huggingface.co/Unbabel/TowerInstruct-7B-v0.2) model in three (Ja<->En, Zh->En) out of the four WMT23 language direction tested
 - Outperformed DeepL in translating the Japanese web novel "That Time I Got Reincarnated as a Slime" into Chinese using in-task RAG
     - Japanese to Chinese translation improvements:
         - +29% sacrebleu
