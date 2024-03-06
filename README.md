@@ -45,7 +45,7 @@ T-Ragx Demo: <a target="_blank" href="https://colab.research.google.com/github/r
         - +29% sacrebleu
         - +0.4% comet22
 
- 👉[***See the write-up for more details***](reports/README.md)📜
+ 👉[***See the write-up for more details***](https://github.com/rayliuca/T-Ragx/tree/main/reports)📜
 
 ## Getting Started
 
