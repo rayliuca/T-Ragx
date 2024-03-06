@@ -26,30 +26,28 @@ T-Ragx Demo: <a target="_blank" href="https://colab.research.google.com/github/r
 
 ### Overview
 
-- Democratize high-quality machine translations
-- Open-soured system-level translation framework
-- Fluent/ natural translations using LLMs
-- Private and secure local translations
-- Zero-shot in-task translations
+- Open-source system-level translation framework
+- Provides fluent and natural translations utilizing LLMs
+- Ensures privacy and security with local translation processes
+- Capable of zero-shot in-task translations
 
 ### Methods
 
-- QLoRA fine-tuned models
-- General + in-task translation memory/ glossary
-- Include preceding text for document-level translations for additional context
+- Utilizes QLoRA fine-tuned models for enhanced accuracy
+- Employs both general and in-task specific translation memories and glossaries
+- Incorporates preceding text in document-level translations for improved context understanding
 
 ### Results
 
-- QLoRA + in-task translation memory and glossary achieved a significant (~45%) increase in aggregated WMT23 translation scores on the Mistral 7b Instruct model 
-- Great recall for valid translation memory/ glossary (i.e. previous translations/ character names)
-- Outperforms native TowerInstruct on 3/4 WMT23 language directions (Ja<->En, Zh->En)
-- Outperforms DeepL in translating Japanese web novel (That Time I Got Reincarnated as a Slime) to Chinese with in-task
-  memories
-    - Japanese -> Chinese
-        - +29% by sacrebleu
-        - +0.4% by comet22
+- Combining QLoRA with in-task translation memory and glossary resulted in !45% increase in aggregated WMT23 translation scores, benchmarked against the Mistral 7b Instruct model
+- Demonstrated high recall for valid translation memories and glossaries, including previous translations and character names
+- Surpassed the performance of the native [TowerInstruct](https://huggingface.co/Unbabel/TowerInstruct-7B-v0.2) model in three of the four WMT23 language direction tests (Ja<->En, Zh->En)
+- Excelled over DeepL in translating the Japanese web novel "That Time I Got Reincarnated as a Slime" into Chinese using in-task memories
+    - Japanese to Chinese translation improvements:
+        - +29% sacrebleu
+        - +0.4% comet22
 
-[//]: # (### 🚧 [***See the write-up for more details***]&#40;reports/README.md&#41; 🚧)
+ 👉[***See the write-up for more details***](reports/README.md)📜
 
 ## Getting Started
 
