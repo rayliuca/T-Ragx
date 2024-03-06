@@ -246,7 +246,7 @@ To achieve a balance between explainability and robustness in our evaluation, I 
 
 ***See the \*_eval_table.md files in this directory for tables***
 
-To enhance the comparability of the model results, the four evaluation metrics were aggregated using two widely recognized methods: the normalized mean and the standardized mean. In the normalized mean method, scores for each metric were normalized by dividing by the task's mean score:
+To enhance the comparability of the model results, the four evaluation metrics were aggregated using two common methods: the normalized mean and the standardized mean. In the normalized mean method, scores for each metric were normalized by dividing by the task's mean score:
 
 $\mu_{normed\_i}$ = mean($\frac{x_i}{\mu_{task}}$)
 
