@@ -20,8 +20,6 @@ T-Ragx Demo: <a target="_blank" href="https://colab.research.google.com/github/r
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-🚧 T-Ragx Colab Tool [colab tool]🚧
-
 ## TL;DR
 
 ### Overview
@@ -66,14 +64,13 @@ or if you are feeling lucky:
 See the [wiki page instructions](https://github.com/rayliuca/T-Ragx/wiki/Getting-Started#install-elasticsearch)
 
 
-Note: you can access read-only preview T-Ragx Elasticsearch services at `https://t-ragx-fossil.rayliu.ca` and `https://t-ragx-fossil2.rayliu.ca`
+Note: you can access preview read-only T-Ragx Elasticsearch services at `https://t-ragx-fossil.rayliu.ca` and `https://t-ragx-fossil2.rayliu.ca`
 (But you will need a personal Elasticsearch service to add your in-task memories)
-
 
 
 #### Environment
 ##### (Recommended) Conda / Mamba
-Download the conda [`environment.yml` file](environment.yml) and run:
+Download the conda [`environment.yml` file](https://github.com/rayliuca/T-Ragx/blob/main/environment.yml) and run:
 
 ```bash
 conda env create -f environment.yml
@@ -85,6 +82,8 @@ conda env create -f environment.yml
 Which will crate a `t_ragx` environment that's compatible with this project
 
 ##### pip
+Download the [`requirment.txt` file](https://github.com/rayliuca/T-Ragx/blob/main/requirements.txt) and run:
+
 Use your favourite virtual environment, and run:
 
 `pip install -r requirment.txt`
