@@ -4,7 +4,7 @@ setup(
     name='t_ragx',
     package_dir={"": "src"},
     packages=find_packages("src"),
-    version='0.0.10',
+    version='0.1.0',
     url="https://github.com/rayliuca/T-Ragx",
     description='Enhancing translation with RAG-powered large language models',
     long_description=open('README.md', encoding="utf8").read(),
