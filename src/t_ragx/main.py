@@ -3,10 +3,9 @@ from typing import List, Union
 import numpy as np
 from tqdm.auto import tqdm
 
-from .processors import ElasticInputProcessor
-from .processors import BaseInputProcessor
-from .models.AggregationModel import CometAggregationModel
-from .models.BaseModel import BaseModel
+from t_ragx.processors import ElasticInputProcessor, BaseInputProcessor
+from t_ragx.models.AggregationModel import CometAggregationModel
+from t_ragx.models.BaseModel import BaseModel
 
 
 class TRagx:

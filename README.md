@@ -180,7 +180,7 @@ All of the datasets used in the project
 |                        [Wikidata](https://www.wikidata.org/)                         |                    |     ✅      |          |         |                    [CC0](https://www.wikidata.org/wiki/Wikidata:Copyright)                     |
 |          [Tensei Shitara Slime Datta Ken Wiki](https://tensura.fandom.com/)          |                    | ☑️ in task |          |         |                          [CC BY-SA](https://www.fandom.com/licensing)                          |
 |                      [WMT 2023](https://www2.statmt.org/wmt23/)                      |                    |            |          |    ✅    |           [for research](https://www2.statmt.org/wmt23/translation-task.html#_data)            |
-|             Tensei Shitara Slime Datta Ken Web Novel & web translations              |     ☑️ in task     |            |          |    ✅    |                                Not included translation memory                                 |
+|             Tensei Shitara Slime Datta Ken Web Novel & web translations              |     ☑️ in task     |            |          |    ✅    |                            Not used for training or redistribution                             |
 
 
 
