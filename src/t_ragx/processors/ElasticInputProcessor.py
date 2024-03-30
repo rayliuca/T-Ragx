@@ -122,7 +122,7 @@ class ElasticInputProcessor(BaseInputProcessor):
         super().__init__()
 
     def load_general_translation(self, elastic_index="translation_memory", elasticsearch_host: str = "localhost",
-                                 elasticsearch_port: int = 9200, es_client: elastic_client = None, elastic_args={},
+                                 es_client: elastic_client = None, elastic_args={},
                                  elastic_client_args={}, **kwargs):
         """
         Load the general translation examples
@@ -132,7 +132,6 @@ class ElasticInputProcessor(BaseInputProcessor):
         if es_client is None:
             es_client = Elasticsearch(
                 elasticsearch_host,  # Elasticsearch endpoint
-                port=elasticsearch_port,
                 **elastic_client_args
             )
 

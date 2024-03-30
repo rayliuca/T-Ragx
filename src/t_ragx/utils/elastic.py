@@ -100,7 +100,7 @@ def filter_df(df: pd.DataFrame, source_lang: str = 'ja', lang_cols: list = None)
     return df
 
 
-def upload_df(df: pd.DataFrame, es_client: Elasticsearch(), id_key: str = 'ja', batch_size: int = 10000,
+def upload_df(df: pd.DataFrame, es_client: Elasticsearch, id_key: str = 'ja', batch_size: int = 10000,
               index: str = None) -> None:
     """
     upload_df
@@ -132,8 +132,7 @@ def upload_df(df: pd.DataFrame, es_client: Elasticsearch(), id_key: str = 'ja', 
 def csv_to_elastic(file_path,
                    id_key='ja',
                    elasticsearch_host: str = "localhost",
-                   elasticsearch_port: int = 9200,
-                   es_client: Elasticsearch() = None,
+                   es_client: Elasticsearch = None,
                    batch_size=10000,
                    read_csv_config: dict = {},
                    index=None,
@@ -155,7 +154,6 @@ def csv_to_elastic(file_path,
         id_key: The language column to hash (sha1) as ID. Duplicate records with common id will be merged.
                         id_key should be in df.columns
         elasticsearch_host:
-        elasticsearch_port:
         es_client:
         batch_size:
         read_csv_config:
@@ -169,7 +167,6 @@ def csv_to_elastic(file_path,
     if es_client is None:
         es_client = Elasticsearch(
             elasticsearch_host,  # Elasticsearch endpoint
-            port=elasticsearch_port,
             **elastic_client_args
         )
 

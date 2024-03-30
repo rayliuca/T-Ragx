@@ -42,7 +42,6 @@ class BaseInputProcessor(metaclass=abc.ABCMeta):
                                  parquet_path,
                                  index_key='ja',
                                  elasticsearch_host: str = "localhost",
-                                 elasticsearch_port: int = 9200,
                                  es_client: elastic_client = None,
                                  dataset_args={},
                                  elastic_args={},
@@ -61,7 +60,6 @@ class BaseInputProcessor(metaclass=abc.ABCMeta):
         if es_client is None:
             es_client = Elasticsearch(
                 elasticsearch_host,  # Elasticsearch endpoint
-                port=elasticsearch_port,
                 **elastic_client_args
             )
 
