@@ -2,7 +2,7 @@ t-ragx
 
 python-dotenv>=0.5.1
 
-torch==2.1.1
+torch==2.2.0
 torchvision
 torchaudio
 
@@ -36,3 +36,4 @@ sacrebleu[ja]
 black
 flake8
 numpy>=1.22.2 # not directly required, pinned by Snyk to avoid a vulnerability
+aiohttp>=3.9.4 # not directly required, pinned by Snyk to avoid a vulnerability
