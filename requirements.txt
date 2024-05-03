@@ -20,7 +20,7 @@ datasets>=2.13.1
 
 fsspec==2023.9.2
 jinja2~=3.1.2
-tqdm~=4.65.0
+tqdm~=4.66.3
 levenshtein~=0.23.0
 setuptools
 
