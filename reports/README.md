@@ -308,7 +308,7 @@ T-Ragx is a robust and scalable framework that significantly enhanced the accura
 
 - Elasticsearch snapshot
 
-    - Endpoint: <https://l8u0.c18.e2-1.dev/>
+    - Endpoint: <https://us-west-004.backblazeb2.com>
 
         - Bucket: t-ragx-public
 
@@ -323,7 +323,7 @@ T-Ragx is a robust and scalable framework that significantly enhanced the accura
     - S3 folder path
 
         - s3://t-ragx-public/glossary/
-        - preview: https://t-ragx-public.l8u0.c18.e2-1.dev/glossary/index.html
+        - preview: https://t-ragx-public.s3.us-west-004.backblazeb2.com/glossary/index.html
 
     - General
 
