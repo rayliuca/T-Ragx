@@ -36,3 +36,4 @@ sacrebleu[ja]
 black
 flake8
 numpy>=1.22.2 # not directly required, pinned by Snyk to avoid a vulnerability
+aiohttp>=3.10.11 # not directly required, pinned by Snyk to avoid a vulnerability
