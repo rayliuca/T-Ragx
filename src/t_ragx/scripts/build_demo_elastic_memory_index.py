@@ -7,7 +7,7 @@ from elasticsearch import Elasticsearch
 from ..utils.elastic import upload_df
 
 INDEX = "translation_memory_demo"
-DEMO_MEMORY_FOLDER_URL = "https://l8u0.c18.e2-1.dev/t-ragx-public/memory/demo"
+DEMO_MEMORY_FOLDER_URL = "https://t-ragx-public.s3.us-west-004.backblazeb2.com/t-ragx-public/memory/demo"
 
 es_client = Elasticsearch()
 
