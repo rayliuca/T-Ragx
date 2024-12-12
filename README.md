@@ -101,7 +101,7 @@ import t_ragx
 input_processor = t_ragx.Processors.ElasticInputProcessor()
 
 # Load/ point to the demo resources
-input_processor.load_general_glossary("https://l8u0.c18.e2-1.dev/t-ragx-public/glossary")
+input_processor.load_general_glossary("https://t-ragx-public.s3.us-west-004.backblazeb2.com/t-ragx-public/glossary")
 input_processor.load_general_translation(elasticsearch_host=["https://t-ragx-fossil.rayliu.ca", "https://t-ragx-fossil2.rayliu.ca"])
 ```
 
