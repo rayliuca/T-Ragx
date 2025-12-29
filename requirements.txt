@@ -9,7 +9,7 @@ torchaudio
 #For elastic search
 elasticsearch>=7.9.1
 
-transformers>=4.38.1
+transformers>=5.0.0rc1
 llama-cpp-python==0.2.54
 openai~=1.13.3
 unbabel-comet>=2.2.1
