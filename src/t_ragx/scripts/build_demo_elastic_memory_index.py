@@ -12,7 +12,7 @@ DEMO_MEMORY_FOLDER_URL = "https://t-ragx-public.s3.us-west-004.backblazeb2.com/t
 es_client = Elasticsearch()
 
 data_index_url = f"{DEMO_MEMORY_FOLDER_URL}/index.json"
-response = urllib.request.urlopen(data_index_url)
+response = urllib.request.urlopen(data_index_url, timeout=30)
 assert response.status == 200, "Cannot read the DEMO memory"
 
 data_index = json.loads(response.read())
